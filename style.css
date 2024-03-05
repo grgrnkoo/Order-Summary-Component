@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    min-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+
+strong {
+    color: hsl(0, 0%, 0%);
+}
+
+.container {
+    width: 32rem;
+    padding: 1rem 2rem;
+}
+
+.card {
+    width: 100%;
+    background-color: hsl(0, 100%, 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px hsla(224, 23%, 55%, 30%);
+}
+
+.card > img {
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.description h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.description > p {
+    text-align: center;
+    margin: 1rem 1rem 1.5rem 1rem;
+    line-height: 1.5rem;
+}
+
+.pricebox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.pricebox img {
+    aspect-ratio: 1 / 1;
+}
+
+.alignbox {
+    display: flex;
+}
+
+.pricebox p {  
+    margin-left: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.pricebox a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    transition: color .5s; 
+}
+
+.pricebox a:hover {
+    color: hsl(224, 23%, 55%);
+}
+
+.description > a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    margin-top: .5rem;
+    transition: color .5s;
+}
+
+.description > a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(0, 100%, 100%);
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 10px 20px hsla(224, 23%, 55%, 50%);
+    transition: background-color .5s;
+}
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 70%);
+    cursor: pointer;
+}  
+
+@media only screen and (max-width: 440px) {
+    .description {
+        font-size: .9rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .pricebox {
+        font-size: .8rem;
+    }
+}
